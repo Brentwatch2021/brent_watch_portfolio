@@ -18,7 +18,7 @@ const Navbar = () => {
           <a href="#Full_Stack_Projects">Full Stack Projects</a>
           <a href="#Automation">Automation Projects</a>
           <a href="#Certificates">Certificates</a>
-          <a href="#Contact">Contact Links</a>
+          <a href="#Contact">Contact Info</a>
           <button onClick={showNavBar} type='button' className='nav-btn nav-close-btn p-3'>
             <i className="bi bi-x-octagon"></i>
           </button>

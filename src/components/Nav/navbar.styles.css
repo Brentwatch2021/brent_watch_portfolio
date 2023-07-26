@@ -67,8 +67,9 @@ nav {
 		z-index: 1;
 	}
 
-	header .responsive_nav {
+	header .responsive_nav  {
 		transform: translateY(100vh);	
+		/* display: flex; */
 	}
 
 	nav .nav-close-btn {

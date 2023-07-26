@@ -1,8 +1,8 @@
-.card-animation 
+/* .card-animation 
 {
      transform: translateX(1000%);
      animation: flyInFromRight 2s ease forwards;
-}
+} */
 
 .demoImage
 {
@@ -12,7 +12,7 @@
     margin: 15px;
 }
 
-@keyframes flyInFromRight 
+/* @keyframes flyInFromRight 
 {
     from{
         transform: translateX(100%);
@@ -20,7 +20,7 @@
     to {
         transform: translateX(0%);
     }
-}
+} */
 
 
 
