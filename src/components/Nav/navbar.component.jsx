@@ -13,15 +13,15 @@ const Navbar = () => {
   return (
     <header>        
         <nav ref={navRef}>
+        <button onClick={showNavBar} type='button' className='nav-btn nav-close-btn'>
+            <i className="bi bi-x-octagon"></i>
+          </button>
           <a href="#Intro">Intro</a>
           <a href="#Front_End_Projects">Front End Projects</a>
           <a href="#Full_Stack_Projects">Full Stack Projects</a>
           <a href="#Automation">Automation Projects</a>
           <a href="#Certificates">Certificates</a>
           <a href="#Contact">Contact Info</a>
-          <button onClick={showNavBar} type='button' className='nav-btn nav-close-btn p-3'>
-            <i className="bi bi-x-octagon"></i>
-          </button>
         </nav>
         <button onClick={showNavBar} type='button' className='nav-btn p-3 f-4'>
             <i className="bi bi-list"></i>
