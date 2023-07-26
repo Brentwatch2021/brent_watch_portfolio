@@ -1,4 +1,4 @@
- const ExtractUrlFromMarkdown = (targetImageAltText,rawMarkdown) => 
+ const ExtractDataFromMarkdown = (targetImageAltText,rawMarkdown) => 
 {
     const regex = /!\[(.*?)\]\((.*?)\)/g;
     let match;
@@ -10,8 +10,7 @@
 
         if(alt.trim() === targetImageAltText.trim())
         {
-            imageUrl = url;
-            break;
+            return url;
         }
     }
     return imageUrl;
@@ -24,11 +23,11 @@ export const GetGithubProjects = async () => {
         const data = await response.json();
         const projects = data.map((repo) => {
             return {
-                name: repo.name,
-                description:repo.description,
+                name: ExtractDataFromMarkdown('Name',repo.description),
+                description:ExtractDataFromMarkdown('Description',repo.description),
                 repoLink:repo.html_url,
                 liveLink:repo.homepage,
-                projectImage: ExtractUrlFromMarkdown('Main Demo',repo.description),
+                projectImage: ExtractDataFromMarkdown('Main Demo',repo.description),
             }
         })
         console.log('Processed some projects:')

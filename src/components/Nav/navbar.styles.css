@@ -64,10 +64,12 @@ nav {
 		gap: 1.5rem;
 		background-color: #000000;
 		transition: 2s;
+		z-index: 1;
 	}
 
 	header .responsive_nav {
 		transform: translateY(100vh);
+		
 	}
 
 	nav .nav-close-btn {

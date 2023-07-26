@@ -2,32 +2,14 @@ import logo from './logo.svg';
 import { useEffect, useState } from 'react'
 import './App.css';
 import { GetGithubProjects } from './utils/api/github/github.api';
-import Navbar from './components/navbar.component';
+import Navbar from './components/Nav/navbar.component';
+import Home from './views/home.view';
 
 function App() {
-
-  const [projects,setProjects] = useState([])
-
-  const GetProjects = async () => {
-    const projects = await GetGithubProjects();
-    setProjects(projects);
-  }
-
-  useEffect(()=>{
-   GetProjects()
-  },[])
-
-
   return (
     <div className="App">
        <Navbar/>
-   
-      
-      {/* {projects.map((project) => {
-          return <> <p key={project.name}>{project.name}</p>
-          {project.projectImage && <img src={project.projectImage} alt={project.projectImage}></img>}
-          </>;
-        })} */}
+        <Home/>
     </div>
   );
 }
