@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import { useEffect, useState } from 'react'
 import './App.css';
 import { GetGithubProjects } from './utils/api/github/github.api';
+import Navbar from './components/navbar.component';
 
 function App() {
 
@@ -19,14 +20,14 @@ function App() {
 
   return (
     <div className="App">
-      <header >
-        
-      </header>
-      {projects.map((project) => {
+       <Navbar/>
+   
+      
+      {/* {projects.map((project) => {
           return <> <p key={project.name}>{project.name}</p>
           {project.projectImage && <img src={project.projectImage} alt={project.projectImage}></img>}
           </>;
-        })}
+        })} */}
     </div>
   );
 }
