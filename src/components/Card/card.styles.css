@@ -1,34 +1,36 @@
-.heatshield-container
+.card-animation 
 {
-    position: relative;
-    width: 200px;
-    height: 173px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+     transform: translateX(1000%);
+     animation: flyInFromRight 2s ease forwards;
 }
 
-.hexagon
+.demoImage
 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    fill: #f0f0f0; 
-    stroke: #000; 
-    stroke-width: 2; 
-    /* //z-index: -1;  */
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 15px;
 }
+
+@keyframes flyInFromRight 
+{
+    from{
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
 
 .content
 {
     position: absolute;
-    top:15px;
-    left:15px;
-    width: 170px;
-    height: 143px;
+    top:100px;
+    left:70px;
+    width: 250px;
+    height: 203px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,3 +38,40 @@
     color: #0f0f0f;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.redpillbluepill
+{
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+}
+
+.redpillbluepill button
+{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.three-d-polygon {
+    position: relative;
+    background: linear-gradient(135deg, #333333, #666666);
+  }
+  
+  .three-d-polygon::before,
+  .three-d-polygon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .three-d-polygon::before {
+    background: linear-gradient(45deg, transparent 45%, rgba(140, 219, 14, 0.5) 46%, rgba(255, 255, 255, 0.3) 55%, transparent 56%);
+  }
+  
+  .three-d-polygon::after {
+    background: linear-gradient(-45deg, transparent 45%, rgba(184, 25, 25, 0.5) 46%, rgba(255, 255, 255, 0.3) 55%, transparent 56%);
+  }
+  

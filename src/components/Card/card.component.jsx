@@ -11,20 +11,25 @@ const Card = (props) => {
     },[props.liveLink]);
 
     return (
-        <div className="heatshield-container">
-                <svg className="hexagon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M75 0 L129 37.5 H129.9 L150 75 L129.9 112.5 H129.9 L75 150 L20.1 112.5 H20.1 L0 75 L20.1 37.5 H20.1 Z" />
-                </svg>
-                <div className="content">
-                    <span>{props.name}</span>
-                    {/* <img src={props.imageUrl} alt={props.name} /> */}
-                    <p>{props.description}</p>
-                    <div>
-                        <button type="button" className="btn btn-danger" onClick={handleRedPillLinkHandler}>Code</button>
-                        <button type="button" className="btn btn-primary" onClick={handleBluePillLinkHandler}>Demo</button>
-                    </div>
-                </div>
+        <div className="card-animation" style={{position: 'relative', width: '400px', height: '400px' }} >
+        <svg width="100%" height="100%" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        <polygon className="three-d-polygon" points="150,25 275,75 275,225 150,275 25,225 25,75" fill="#666666" />
+        
+        </svg>
+        <div style={{ position: 'absolute', top: '0px', left: '0px' }}>
+          <div className="content text-center">
+            <span>{props.name}</span>
+            {props.imageUrl && <img className="demoImage" src={props.imageUrl} alt={props.name} />}
+            {/* <p className="d-inline">{props.description}</p> */}
+            <div className="redpillbluepill">
+              <button type="button" className="btn btn-danger" onClick={handleRedPillLinkHandler}>Code</button>
+              <button type="button" className="btn btn-primary" onClick={handleBluePillLinkHandler}>Demo</button>
+            </div>
+          </div>
         </div>
+      </div>
+
+      
     );
 }
 
