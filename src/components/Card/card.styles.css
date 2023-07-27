@@ -9,7 +9,7 @@
     width: 250px;
     height: 150px;
     border-radius: 10px;
-    margin: 15px;
+    margin: 25px;
 }
 
 /* @keyframes flyInFromRight 
@@ -27,8 +27,8 @@
 .content
 {
     position: absolute;
-    top:100px;
-    left:70px;
+    top:150px;
+    left:125px;
     width: 250px;
     height: 203px;
     display: flex;
@@ -51,27 +51,9 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+.three-d-polygon
+{
+    box-shadow: 0 3px 10px rgba(15, 189, 24, 0.2);
+}
 
-.three-d-polygon {
-    position: relative;
-    background: linear-gradient(135deg, #333333, #666666);
-  }
-  
-  .three-d-polygon::before,
-  .three-d-polygon::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .three-d-polygon::before {
-    background: linear-gradient(45deg, transparent 45%, rgba(140, 219, 14, 0.5) 46%, rgba(255, 255, 255, 0.3) 55%, transparent 56%);
-  }
-  
-  .three-d-polygon::after {
-    background: linear-gradient(-45deg, transparent 45%, rgba(184, 25, 25, 0.5) 46%, rgba(255, 255, 255, 0.3) 55%, transparent 56%);
-  }
-  
+

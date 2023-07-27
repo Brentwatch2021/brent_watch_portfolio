@@ -1,13 +1,55 @@
+
+
 *
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Star Trek Enterprise Future', sans-serif;
+  font-family: 'bank gothic', sans-serif;
   color: white;
   font-size: 22px;
 }
 
+.intro
+{
+  padding: 20px;
+  min-height: calc(100vh - 80px);
+  box-sizing: border-box;
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.meimg
+{
+  width: 200px;
+  height: 200px;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.intro-heading
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.intro-heading h1
+{
+  color: black;
+}
+
+.intro-description
+{
+  color: black;
+  padding: 15px;
+  display: inline-block;
+  padding: 55px;
+}
 
 
 

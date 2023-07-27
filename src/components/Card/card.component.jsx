@@ -11,7 +11,7 @@ const Card = (props) => {
     },[props.liveLink]);
 
     return (
-        <div className="card-animation" style={{position: 'relative', width: '400px', height: '400px' }} >
+        <div className="card-animation" style={{position: 'relative', width: '500px', height: '500px' }} >
         <svg width="100%" height="100%" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
         <polygon className="three-d-polygon" points="150,25 275,75 275,225 150,275 25,225 25,75" fill="#666666" />
         
