@@ -1,24 +1,21 @@
-
-
-
 header {
+	display: -webkit-box; 
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 80px;
 	padding: 0 2rem;
 	background-color: #000000;
-	color: #00ff00;
 }
 
 nav a {
 	margin: 0 1rem;
-	color: var(--textColor);
+	color: white;
 	text-decoration: none;
 }
 
 nav a:hover {
-	color: var(--secondaryColor);
+	color: white;
 }
 
 header .nav-btn {
@@ -27,7 +24,7 @@ header .nav-btn {
 	background: transparent;
 	border: none;
 	outline: none;
-	color: var(--textColor);
+	color: white;
 	visibility: hidden;
 	opacity: 0;
 	font-size: 1.8rem;
@@ -35,14 +32,18 @@ header .nav-btn {
 
 header div,
 nav {
+	display: -webkit-box; 
 	display: flex;
 	align-items: center;
 }
 
-@media only screen and (max-width: 1024px) {
+header button i {
+	font-size: 40px;
+}
 
-	header
-	{
+@media only screen and (max-width: 1024px) {
+	header {
+		-webkit-box-pack: end; 
 		justify-content: flex-end;
 	}
 
@@ -53,23 +54,27 @@ nav {
 
 	header nav {
 		position: fixed;
-		top: -100vh;
+		top: -150vh;
 		left: 0;
 		height: 100%;
 		width: 100%;
+		-webkit-box-pack: center; 
+		justify-content: center;
+		display: -webkit-box; 
 		display: flex;
+		-webkit-box-orient: column; 
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
 		gap: 1.5rem;
 		background-color: #000000;
 		transition: 2s;
 		z-index: 1;
 	}
 
-	header .responsive_nav  {
-		transform: translateY(100vh);	
-		/* display: flex; */
+	header .responsive_nav {
+		-webkit-transform: translateY(150vh); 
+		transform: translateY(150vh);
+		
 	}
 
 	nav .nav-close-btn {

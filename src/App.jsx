@@ -9,8 +9,8 @@ function App() {
        <Navbar/>
        <section className='intro'>
         <div className='intro-heading'>
-          <h1>Hi I am Brent A programmer</h1>
-          <img className='meimg' src={me} alt="me" />
+          <h1>Hi I am Brent A Programmer</h1>
+          <img className='meimg' src={me} alt="Im Brent A programmer" />
         </div>
         <div className='intro-description'>
           I have over 4 years experience in C# and recently upskilled my self in React and Angular.

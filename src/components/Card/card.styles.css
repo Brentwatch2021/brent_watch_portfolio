@@ -1,59 +1,57 @@
-/* .card-animation 
-{
-     transform: translateX(1000%);
-     animation: flyInFromRight 2s ease forwards;
-} */
+.custom-card {
+    background: url('../../assets/honeycomb.jpg');
+    background-size: cover;
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    margin: 15px;
+}
 
-.demoImage
-{
+.content {
+    display: -webkit-box; 
+    display: flex;
+    -webkit-box-orient: vertical; 
+    flex-direction: column;
+    align-items: center;
+    height: 390px;
+    padding-top: 80px;
+}
+
+.content span {
+    background: -webkit-linear-gradient(right, rgb(202, 206, 203), rgb(19, 17, 17)); /* WebKit prefix for linear-gradient */
+    background: linear-gradient(to right, rgb(202, 206, 203), rgb(19, 17, 17));
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(25, 10, 153, 0.678);
+}
+
+.demoImage {
     width: 250px;
     height: 150px;
     border-radius: 10px;
-    margin: 25px;
 }
 
-/* @keyframes flyInFromRight 
-{
-    from{
-        transform: translateX(100%);
+.redpillbluepill {
+    margin-top: 10px;
+}
+
+.redpillbluepill button {
+    margin: 10px;
+    background: radial-gradient(circle,white,black);
+}
+
+@media only screen and (max-width: 500px) {
+    .custom-card {
+        margin: 0;
     }
-    to {
-        transform: translateX(0%);
+
+    .content {
+        width: 380px;
     }
-} */
-
-
-
-.content
-{
-    position: absolute;
-    top:150px;
-    left:125px;
-    width: 250px;
-    height: 203px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #0f0f0f;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-.redpillbluepill
-{
-    display: flex;
-    justify-content: space-around;
-    width: 250px;
+@media only screen and (max-width: 1022px) {
+    .content {
+        width: 380px;
+    }
 }
-
-.redpillbluepill button
-{
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-.three-d-polygon
-{
-    box-shadow: 0 3px 10px rgba(15, 189, 24, 0.2);
-}
-
-
