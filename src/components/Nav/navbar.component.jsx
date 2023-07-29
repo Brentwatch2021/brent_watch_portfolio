@@ -19,6 +19,7 @@ const Navbar = () => {
           <a onClick={showNavBar} href="#Intro">Intro</a>
           <a onClick={showNavBar} href="#Projects">Projects</a>
           <a onClick={showNavBar} href="#Cert">Certificates</a>
+          <a onClick={showNavBar} href="#Resources">Resources</a>
           <a onClick={showNavBar} href="#Contact">Contact Info</a>
         </nav>
         <button onClick={showNavBar} type='button' className='nav-btn p-3 f-4'>

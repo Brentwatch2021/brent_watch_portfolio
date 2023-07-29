@@ -76,4 +76,50 @@
   height: 100%;
 }
 
+.resources
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+
+.resources p
+{
+  color: black;
+}
+
+.resource-items
+{
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 500px)
+{
+  .resource-items
+  {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+  }
+
+  .resource-items a
+  {
+    margin: 15px;
+  }
+}
+
+.backToTop
+{
+  position: fixed;
+  bottom: 25px;
+  right: 10px;
+  z-index: 100;
+}
+
+.backToTop i
+{
+  color: black;
+  font-size: 45px;
+}

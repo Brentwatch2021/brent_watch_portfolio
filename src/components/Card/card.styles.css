@@ -17,7 +17,7 @@
 }
 
 .content span {
-    background: -webkit-linear-gradient(right, rgb(202, 206, 203), rgb(19, 17, 17)); /* WebKit prefix for linear-gradient */
+    background: -webkit-linear-gradient(right, rgb(202, 206, 203), rgb(19, 17, 17)); 
     background: linear-gradient(to right, rgb(202, 206, 203), rgb(19, 17, 17));
     border-radius: 10px;
     padding: 5px;
@@ -37,7 +37,7 @@
 
 .redpillbluepill button {
     margin: 10px;
-    background: radial-gradient(circle,white,black);
+    background: radial-gradient(circle,black,white);
 }
 
 @media only screen and (max-width: 500px) {
