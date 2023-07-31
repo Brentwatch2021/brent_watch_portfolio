@@ -18,10 +18,9 @@ const Card = (props) => {
                 <div className="content">
                       <span>{props.name}</span>
                           {props.imageUrl && <img className="demoImage" src={props.imageUrl} alt={props.name} />}
-                          
                           <div className="redpillbluepill">
-                            <button type="button" className="btn btn-danger" onClick={handleRedPillLinkHandler}>Code</button>
-                            <button type="button" className="btn btn-primary" onClick={handleBluePillLinkHandler}>Demo</button>
+                           {props.githubRepoLink ? <button type="button" className="btn redpill" onClick={handleRedPillLinkHandler}>Code</button>: null} 
+                           {props.liveLink ? <button type="button" className="btn bluepill" onClick={handleBluePillLinkHandler}>Demo</button> : null} 
                           </div>
                 </div>
               </div>

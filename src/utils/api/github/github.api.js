@@ -22,17 +22,16 @@ export const GetGithubProjects = async () => {
         const response = await fetch('https://api.github.com/users/brentwatch2021/repos');
         const data = await response.json();
         const projects = data.map((repo) => {
-            return {
-                name: ExtractDataFromMarkdown('Name',repo.description),
-                description:ExtractDataFromMarkdown('Description',repo.description),
-                repoLink:repo.html_url,
-                liveLink:repo.homepage,
-                projectImage: ExtractDataFromMarkdown('Main Demo',repo.description),
-            }
+                return {
+                    name: ExtractDataFromMarkdown('Name',repo.description),
+                    description:ExtractDataFromMarkdown('Description',repo.description),
+                    repoLink:repo.html_url,
+                    liveLink:repo.homepage,
+                    projectImage: ExtractDataFromMarkdown('Main Demo',repo.description),
+                    ShowOnPortfolio: ExtractDataFromMarkdown('ShowOnPortfolio',repo.description)
+                }
         })
-        console.log('Processed some projects:')
-        console.log(projects);
-        return projects;
+        return projects.filter((project) => project.ShowOnPortfolio === "Yes");
     }
     catch(error)
     {

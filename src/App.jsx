@@ -3,6 +3,8 @@ import Navbar from './components/Nav/navbar.component';
 import Home from './views/home.view';
 import  me from './assets/me.jpg'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import CV from './assets/CV.pdf';
+// import Payslip from './assets/Payslip.pdf';
 
 function App() {
   
@@ -27,14 +29,23 @@ function App() {
         </section>
         <section id='Resources' className='resources'>
           <p>Resources</p>
-          <div className='resource-items'>
-              <a href="/">CV</a>
-              <a href="/">Matric Certificate</a>
-              <a href="/">Latest Payslip</a>
-              <a href="/">Latest Payslip</a>
+          <div className='resource-items m-5'>
+              Download CV: <a className='m-5' href={CV} download="CV" target='_blank' rel="noreferrer" title='CV'><i className="bi bi-file-earmark-person-fill"></i></a>
+              {/* <a className='m-5' href={Payslip} download="Payslip" title='Payslip'><i className="bi bi-wallet2"></i></a> */}
           </div>
-          
         </section>
+        <section id='Contact' className='resources'>
+          <p>Contact</p>
+          <div className='contact-items'>
+              <a className='m-2' target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/brent-becker-48337b26a/"><i className="bi bi-linkedin"></i></a>
+              <a className='m-2' target='_blank' rel='noreferrer' href="https://github.com/Brentwatch2021"><i className="bi bi-github"></i></a>
+              <a className='m-2' target='_blank' rel='noreferrer' href="tel:0647838587"><i className="bi bi-telephone-fill"></i></a>
+              <a className='m-2' target='_blank' rel='noreferrer' href="https://wa.me/27647838587"><i className="bi bi-whatsapp"></i></a>
+          </div>
+          <p className='copyright'>Copyright © 2023 Brent Watch Portfolio.</p> 
+          <p className='copyright'>All rights reserved.</p>
+        </section>
+        
     </div>
   );
 }

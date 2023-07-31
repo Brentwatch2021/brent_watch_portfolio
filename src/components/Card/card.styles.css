@@ -6,6 +6,11 @@
     margin: 15px;
 }
 
+.custom-card:hover
+{
+    transform: scale(1.2);
+}
+
 .content {
     display: -webkit-box; 
     display: flex;
@@ -17,18 +22,20 @@
 }
 
 .content span {
-    background: -webkit-linear-gradient(right, rgb(202, 206, 203), rgb(19, 17, 17)); 
-    background: linear-gradient(to right, rgb(202, 206, 203), rgb(19, 17, 17));
+    background: -webkit-linear-gradient(right, rgba(202, 206, 203, 0.356), rgb(19, 17, 17)); 
+    background: linear-gradient(to right, rgba(202, 206, 203, 0.267), rgb(19, 17, 17));
     border-radius: 10px;
     padding: 5px;
     margin-bottom: 10px;
-    box-shadow: 0 4px 8px rgba(25, 10, 153, 0.678);
+    box-shadow: 0 4px 8px rgba(153, 10, 10, 0.678);
+    opacity: 1;
 }
 
 .demoImage {
     width: 250px;
     height: 150px;
     border-radius: 10px;
+    filter: grayscale(1);
 }
 
 .redpillbluepill {
@@ -37,7 +44,22 @@
 
 .redpillbluepill button {
     margin: 10px;
-    background: radial-gradient(circle,black,white);
+    
+}
+
+.redpill
+{
+    background: radial-gradient(circle,red,black);
+    color: white;
+    border-radius: 25px;
+}
+
+.bluepill
+{
+    background: radial-gradient(circle,blue,black);
+    color: white;
+    border-radius: 25px;
+
 }
 
 @media only screen and (max-width: 500px) {
