@@ -4,6 +4,7 @@ import Home from './views/home.view';
 import  me from './assets/me.jpg'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import CV from './assets/CV.pdf';
+import { Suspense } from 'react';
 // import Payslip from './assets/Payslip.pdf';
 
 function App() {
@@ -22,7 +23,10 @@ function App() {
           See my projects I have  completed below.
         </div>
        </section>
-        <Home/>
+       <Suspense fallback={<div>Loading...</div>}>
+          <Home/>
+       </Suspense>
+        
         <section id='Cert' className='certificate'>
             <h1>Certificates</h1>
             <img alt="react_certificate" src="https://udemy-certificate.s3.amazonaws.com/image/UC-34b666ea-841a-4763-99d5-44de59e0382c.jpg?v=1690118775000" ></img>
