@@ -1,4 +1,4 @@
-.custom-card {
+/* .custom-card {
     background: url('../../assets/honeycomb.jpg');
     background-size: cover;
     -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
@@ -10,6 +10,8 @@
 {
     transform: scale(1.2);
 }
+
+
 
 .content {
     display: -webkit-box; 
@@ -76,4 +78,71 @@
     .content {
         width: 380px;
     }
+} */
+
+
+@media only screen and (max-width: 500px) {
+    /* .custom-card {
+        margin: 0;
+    }
+
+    .content {
+        width: 340px;
+    } */
+
+    .mainContainer:nth-child(even) .mainDemo
+    {
+        border: solid 3px grey;
+        padding: 25px;
+        border-top-right-radius: 15px;
+    }
+
+    .mainContainer .mainDemo
+    {
+        border: solid 3px #1195bd;
+        padding: 25px;
+        border-top-right-radius: 15px;
+    }
+
+    .mainContainer .mainDemo img
+    {
+        width: 250px;
+    }
+
+    .greatLinks
+    {
+        position: relative;
+        left: 250px;
+        bottom: 70px;
+        background-color: #241f21;
+        border-radius: 15px;
+        border-bottom-right-radius: 0px;
+        width: 90px;
+        height: 70px;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .greatLinks i
+    {
+        color: white;
+    }
+
+    .greatLinks i:hover
+    {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
 }
+
+@media only screen and (max-width: 1022px) {
+    .content {
+        width: 380px;
+    }
+} 
+
+
+

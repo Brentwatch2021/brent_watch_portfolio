@@ -11,19 +11,28 @@ const Card = (props) => {
     },[props.liveLink]);
 
     return (
-        
-          
-            
-              <div className="custom-card">
-                <div className="content">
-                      <span>{props.name}</span>
-                          {props.imageUrl && <img className="demoImage" src={props.imageUrl} alt={props.name} />}
-                          <div className="redpillbluepill">
-                           {props.githubRepoLink ? <button type="button" className="btn redpill" onClick={handleRedPillLinkHandler}>Code</button>: null} 
-                           {props.liveLink ? <button type="button" className="btn bluepill" onClick={handleBluePillLinkHandler}>Demo</button> : null} 
-                          </div>
+            //   <div className="custom-card">
+            //     <div className="content">
+            //               <span>{props.name}</span>
+            //               {/* {props.imageUrl && <img className="demoImage" src={props.imageUrl} alt={props.name} />} */}
+            //               <div className="redpillbluepill">
+            //               {props.githubRepoLink ? <button type="button" className="btn redpill" onClick={handleRedPillLinkHandler}>Code</button>: null} 
+            //               {props.liveLink ? <button type="button" className="btn bluepill" onClick={handleBluePillLinkHandler}>Demo</button> : null} 
+            //               </div>
+            //     </div>
+            //   </div>
+            <div className="mainContainer">
+                <div className="mainDemo">
+                    {props.imageUrl && <img className="demoImage" src={props.imageUrl} alt={props.name} />}
                 </div>
-              </div>
+                <div>
+                    <span>{props.name}</span>
+                    <div className="greatLinks">
+                    {props.githubRepoLink ? <i onClick={handleRedPillLinkHandler} title="Github Repo" className="bi bi-github"></i>: null} 
+                    {props.liveLink ? <i onClick={handleBluePillLinkHandler} title="Live Link" className="bi bi-globe"></i> : null} 
+                    </div>
+                </div>
+            </div>
         
     );
 }

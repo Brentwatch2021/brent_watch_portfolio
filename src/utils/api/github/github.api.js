@@ -1,4 +1,4 @@
- const ExtractDataFromMarkdown = (targetImageAltText,rawMarkdown) => 
+ const ExtractDataFromMarkdown = (datapointToExtract,rawMarkdown) => 
 {
     const regex = /!\[(.*?)\]\((.*?)\)/g;
     let match;
@@ -6,15 +6,18 @@
 
     while((match = regex.exec(rawMarkdown)) !== null)
     {
-        const [,alt,url] = match;
+        const [,alt,data] = match;
 
-        if(alt.trim() === targetImageAltText.trim())
+        if(alt.trim() === datapointToExtract.trim())
         {
-            return url;
+            return data;
         }
     }
     return imageUrl;
 }
+
+
+
 
 export const GetGithubProjects = async () => {
 
@@ -28,7 +31,8 @@ export const GetGithubProjects = async () => {
                     repoLink:repo.html_url,
                     liveLink:repo.homepage,
                     projectImage: ExtractDataFromMarkdown('Main Demo',repo.description),
-                    ShowOnPortfolio: ExtractDataFromMarkdown('ShowOnPortfolio',repo.description)
+                    ShowOnPortfolio: ExtractDataFromMarkdown('ShowOnPortfolio',repo.description),
+                    TechStack: ExtractDataFromMarkdown('TechStack',repo.description) ? ExtractDataFromMarkdown('TechStack',repo.description).trim().split(',') : [],
                 }
         })
         return projects.filter((project) => project.ShowOnPortfolio === "Yes");

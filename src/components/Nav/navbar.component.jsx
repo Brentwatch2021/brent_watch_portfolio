@@ -1,5 +1,7 @@
 import React,{useRef} from 'react';
 import './navbar.styles.css'
+import Logo from '../../assets/logo.png'
+
 
 const Navbar = () => {
 
@@ -13,18 +15,27 @@ const Navbar = () => {
   return (
     <header>        
         <nav ref={navRef}>
-        <button onClick={showNavBar} type='button' className='nav-btn nav-close-btn'>
-            <i className="bi bi-x-octagon"></i>
+          <button onClick={showNavBar} type='button' className='nav-btn nav-close-btn'>
+          <i className="bi bi-x-circle hover-circle"></i>
           </button>
-          <a onClick={showNavBar} href="#Intro">Intro</a>
+          <a onClick={showNavBar} href="#Projects">About Me</a>
           <a onClick={showNavBar} href="#Projects">Projects</a>
           <a onClick={showNavBar} href="#Cert">Certificates</a>
-          <a onClick={showNavBar} href="#Resources">Resources</a>
-          <a onClick={showNavBar} href="#Contact">Contact Info</a>
         </nav>
         <button onClick={showNavBar} type='button' className='nav-btn p-3 f-4'>
-            <i className="bi bi-list"></i>
+            <div className='bars'>
+            <div className='bar'>
+              <div className='bar2'></div>
+            </div>
+            <div className='bar'>
+            <div className='bar2'></div>
+            </div>
+            </div>
         </button>
+        <a id='logo' href="#App">
+            <img src={Logo} alt="Logo" />
+        </a>
+        <a href='#Contact' className='contact'>Contact Me</a>
     </header>
     // <nav className="navbar navbar-expand-lg navbar-light bg-light">
     //   <a className="navbar-brand" href="/">Navbar</a>
