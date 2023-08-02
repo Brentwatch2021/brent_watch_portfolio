@@ -82,7 +82,7 @@
 
 .experienceContainer
 {
-  position: absolute;
+  position: relative;
   right: -100px;
   bottom: 50px;
   padding: 10px;
