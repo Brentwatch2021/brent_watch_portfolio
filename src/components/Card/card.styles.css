@@ -95,6 +95,7 @@
         border: solid 3px grey;
         padding: 25px;
         border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
     }
 
     .mainContainer .mainDemo
@@ -102,18 +103,19 @@
         border: solid 3px #1195bd;
         padding: 25px;
         border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
     }
 
     .mainContainer .mainDemo img
     {
-        width: 250px;
+        width: 200px;
     }
 
     .greatLinks
     {
         position: relative;
-        left: 250px;
-        bottom: 70px;
+        left: 200px;
+        bottom: 102px;
         background-color: #241f21;
         border-radius: 15px;
         border-bottom-right-radius: 0px;

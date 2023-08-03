@@ -13,7 +13,9 @@ function App() {
     <div id='App' className="App">
       <ScrollToTop/>
        <Navbar/>
-       
+       <div className='intro-description'>
+          Hi I'm Brent A Coder see my skills and latest projects below
+        </div>
        <section id='Intro'>
         {/* <div className='profilePicbubble'>
           <div className='profilePicbubble2'>
@@ -47,11 +49,6 @@ function App() {
           See my projects I have  completed below.
         </div> */}
        </section>
-
-        <div className='intro-description'>
-          Hi I'm Brent A Coder see my skills and latest projects below
-        </div>
-
         <div className='skills'>
           <section>
             <span className='front-end-skill'>HTML</span>

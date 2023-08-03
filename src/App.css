@@ -87,6 +87,7 @@
   bottom: 50px;
   padding: 10px;
   border-radius: 10px;
+  border-bottom-right-radius: 0px;
   color: white;
   background-color: #241f21;
   display: flex;
@@ -136,16 +137,18 @@
 
 .front-end-skill
 {
-  padding: 15px;
+  padding: 5px;
+  font-size: 15px;
   background-color: #94d9ee;
   color: black;
   border-radius: 10px;
-  margin: 15px;
+  margin: 5px;
 }
 
 .front-end-skill:nth-child(even)
 {
-  padding: 15px;
+  padding: 5px;
+  font-size: 15px;
   background-color: #1195bd;
   color: white;
   border-radius: 10px;
@@ -155,10 +158,11 @@
 .back-end-skill
 {
   padding: 5px;
+  font-size: 15px;
   background-color: #241f21;
   color: white;
   border-radius: 10px;
-  margin: 15px;
+  margin: 5px;
   word-wrap: break-word;
   white-space: normal;
 }
@@ -167,6 +171,7 @@
 {
   white-space: normal;
   padding: 5px;
+  font-size: 15px;
   background-color: #b4b2b2;
   color: black;
   border-radius: 10px;
@@ -212,9 +217,9 @@
   {
     background-color: #1195bd;
     border-radius: 25px;
+    border-top-left-radius: 0px;
     overflow: hidden;
-    top: 100px;
-    margin-top: 100px;
+    margin-top: 10px;
     
   }
   
@@ -289,7 +294,7 @@
 
 .backToTop i
 {
-  color: black;
+  color: #241f21;
   font-size: 45px;
 }
 
