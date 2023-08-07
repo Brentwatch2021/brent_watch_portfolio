@@ -8,6 +8,47 @@
   scroll-behavior: smooth;
 }
 
+@keyframes fadeAndFlyInFromRight
+{
+  from 
+  {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to 
+  {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+#Intro
+{
+  opacity: 0; 
+  animation: fadeAndFlyInFromRight 3.5s ease forwards; 
+}
+
+
+@keyframes fadeAndFlyInFromLeft
+{
+  from 
+  {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to 
+  {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#Software-Skills
+{
+  opacity: 0;
+  animation: fadeAndFlyInFromLeft 3.5s ease forwards; 
+}
+
 .intro {
   padding: 20px;
   min-height: calc(100vh - 80px);
@@ -19,71 +60,20 @@
   flex-direction: column;
 }
 
-/* .profilePicbubble
-{
-  height: 422px;
-  width: 300px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -10;
-}
+#resource-items p
+  {
+    text-align: center;
+  }
 
-.profilePicbubble2
+.profileImage
 {
-  height: 182px;
-  width: 550px;
-  background-color: #1195bd;
-  position: absolute;
-  border-top-left-radius: 75px;
-  border-bottom-left-radius: 75px;
-  left: -190px;
-  top: 130px;
-  z-index: -10;
   overflow: hidden;
 }
-
-.profilePicbubble2 img
-{
-  height: 250px;
-  /* left: -100px; */
-  /* position: relative; */
-  /* z-index: 10; */
-  /* top: -50px; */
-/* }  */
-
-/* .profilePic
-{
-  position: relative;
-  display: inline-block;
-}
-
-.profilePic img
-{
-  position: absolute; 
-  top: 0px;
-  left: 40px;
-  /* background-color:red; */
-  
-
-/* .profilePic img:first-child
-{
-  z-index: 1;
-}
-
-.profilePic img:last-child
-{
-  z-index: 2;
-  clip-path: polygon(51% 30%, 30% 72%, 79% 73%);
-  -webkit-clip-path: polygon(51% 30%, 30% 72%, 79% 73%);
-}
-
-*/
 
 .experienceContainer
 {
   position: relative;
-  right: -100px;
+  right: -150px;
   bottom: 50px;
   padding: 10px;
   border-radius: 10px;
@@ -92,6 +82,7 @@
   background-color: #241f21;
   display: flex;
   flex-direction: column;
+  width: 120px;
 }
 
 .years
@@ -182,6 +173,12 @@
   height: 250px;
 }
 
+#Intro
+{
+  display: flex;
+  justify-content: space-around;
+}
+
 .intro-heading {
   display: flex;
   flex-direction: row;
@@ -201,6 +198,30 @@
   padding: 55px;
 }
 
+.profileImage
+  {
+    background-color: #1195bd;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+    margin-top: 10px;
+    height: 250px;
+    overflow: hidden;
+  }
+
+  #Contact
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #ContactContent p 
+  {
+    text-align: center;
+  }
+
+  
+
 
 @media only screen and (max-width: 500px) {
   
@@ -213,16 +234,13 @@
     flex-direction: column;
   }
   
-  .profileContainer
+  #Contact
   {
-    background-color: #1195bd;
-    border-radius: 25px;
-    border-top-left-radius: 0px;
-    overflow: hidden;
-    margin-top: 10px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  
+
   .intro-heading {
     -webkit-flex-direction: column;
     flex-direction: column;
@@ -256,13 +274,40 @@
 
 .resources p
 {
-  color: white;
+  color: black;
+  text-align: center;
 }
 
 .resource-items
 {
   flex-direction: row;
 }
+
+.contact-items a i
+{
+  color: #1195bd;
+  font-size: 55px;
+}
+
+.contact-items a i:hover
+{
+  color: black;
+  cursor: pointer;
+}
+
+.resource-items a i
+{
+  font-size: 55px;
+  color: black;
+}
+
+.resource-items a i:hover
+{
+  color: #1195bd;
+  
+}
+
+
 
 @media only screen and (max-width: 500px)
 {
@@ -279,6 +324,18 @@
   }
 }
 
+@media only screen and (max-width: 1000px)
+{
+  #Intro
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+  }
+}
+
 .backToTop
 {
   position: fixed;
@@ -290,6 +347,12 @@
 .backToTop:hover
 {
   transform: scale(1.2)
+}
+
+#Projects
+{
+  display: flex;
+  justify-content: center;
 }
 
 .backToTop i

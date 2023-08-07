@@ -18,7 +18,6 @@ const Navbar = () => {
           <button onClick={showNavBar} type='button' className='nav-btn nav-close-btn'>
           <i className="bi bi-x-circle hover-circle"></i>
           </button>
-          <a onClick={showNavBar} href="#Projects">About Me</a>
           <a onClick={showNavBar} href="#Projects">Projects</a>
           <a onClick={showNavBar} href="#Cert">Certificates</a>
         </nav>

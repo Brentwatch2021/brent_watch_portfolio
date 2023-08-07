@@ -31,7 +31,7 @@ const Home = () => {
 
 
     return (
-        <div id="Projects" className="HomeContainer Container">
+        <div className="HomeContainer Container">
         {githubProjects.map((project, index) => (
           <Card
             key={index} 

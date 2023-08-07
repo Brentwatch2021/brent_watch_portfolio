@@ -3,7 +3,7 @@ header {
 	display: -webkit-box; 
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	height: 80px;
 	/* padding: 0 2rem; */
 	/* background-color: #000000; */
@@ -12,7 +12,8 @@ header {
 
 #logo img
 {
-	width: 50px;
+	width: 0px;
+	display: none;
 }
 nav a {
 	margin: 0 1rem;
@@ -21,7 +22,7 @@ nav a {
 }
 
 nav a:hover {
-	color: white;
+	color: #0056b3;
 }
 
 header .nav-btn {
@@ -34,7 +35,6 @@ header .nav-btn {
 	visibility: hidden;
 	opacity: 0;
 	font-size: 1.8rem;
-
 }
 
 header div,

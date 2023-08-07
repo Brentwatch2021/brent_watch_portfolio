@@ -1,95 +1,68 @@
-/* .custom-card {
-    background: url('../../assets/honeycomb.jpg');
-    background-size: cover;
-    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-    margin: 15px;
+.mainContainer
+{
+    width: 270px;
+    height: 190px;
 }
 
-.custom-card:hover
+.mainContainer:nth-child(even) .mainDemo
+{
+    border: solid 3px grey;
+    padding: 25px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.mainContainer .mainDemo
+{
+    border: solid 3px #1195bd;
+    padding: 25px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 170px;
+}
+
+.mainContainer .mainDemo img
+{
+    width: 200px;
+}
+
+.greatLinks
+{
+    position: relative;
+    left: 200px;
+    bottom: 102px;
+    background-color: #241f21;
+    border-radius: 15px;
+    border-bottom-right-radius: 0px;
+    width: 90px;
+    height: 70px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.greatLinks i
+{
+    color: white;
+}
+
+.greatLinks i:hover
 {
     transform: scale(1.2);
+    cursor: pointer;
 }
 
-
-
-.content {
-    display: -webkit-box; 
+.ContactContent
+{
     display: flex;
-    -webkit-box-orient: vertical; 
     flex-direction: column;
-    align-items: center;
-    height: 390px;
-    padding-top: 80px;
 }
-
-.content span {
-    background: -webkit-linear-gradient(right, rgba(202, 206, 203, 0.356), rgb(19, 17, 17)); 
-    background: linear-gradient(to right, rgba(202, 206, 203, 0.267), rgb(19, 17, 17));
-    border-radius: 10px;
-    padding: 5px;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 8px rgba(153, 10, 10, 0.678);
-    opacity: 1;
-}
-
-.demoImage {
-    width: 250px;
-    height: 150px;
-    border-radius: 10px;
-    filter: grayscale(1);
-}
-
-.redpillbluepill {
-    margin-top: 10px;
-}
-
-.redpillbluepill button {
-    margin: 10px;
-    
-}
-
-.redpill
-{
-    background: radial-gradient(circle,red,black);
-    color: white;
-    border-radius: 25px;
-}
-
-.bluepill
-{
-    background: radial-gradient(circle,blue,black);
-    color: white;
-    border-radius: 25px;
-
-}
-
-@media only screen and (max-width: 500px) {
-    .custom-card {
-        margin: 0;
-    }
-
-    .content {
-        width: 380px;
-    }
-}
-
-@media only screen and (max-width: 1022px) {
-    .content {
-        width: 380px;
-    }
-} */
 
 
 @media only screen and (max-width: 500px) {
-    /* .custom-card {
-        margin: 0;
-    }
-
-    .content {
-        width: 340px;
-    } */
-
+   
     .mainContainer:nth-child(even) .mainDemo
     {
         border: solid 3px grey;
